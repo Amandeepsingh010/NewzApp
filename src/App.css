@@ -1,0 +1,115 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  background-color: #222d39;
+  overflow: visible !important;
+}
+ul{
+  list-style: none;
+  display: flex;
+  padding-left: 1vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+a:hover{
+  background-color: #0e2638;
+  border-radius: 5px;
+  transition: 0.4s ;
+}
+
+.nav{
+  background: linear-gradient(to right, #1f303c, #7389a0, #0e2638);
+  /* top: 0; */
+  position: fixed;
+  /* overflow:visible; 
+  margin-bottom: 6vh; */
+  /* top: 0; */
+  width: 100%;
+}
+.navbar{
+  /* z-index: 2000;
+  display: flex; */
+  position: relative;
+}
+.nav img{
+  top: 0;
+  padding-left: 2vw;
+  width: 200px;
+  height: 100px;
+}
+.searchbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1vw;
+}
+.footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to right, #1f303c, #7389a0, #0e2638);
+  color: white;
+  text-align: center;
+}
+/* .source-text p{
+
+} */
+.truncate-text {
+  display: -webkit-box;
+  display: box; /* fallback */
+  -webkit-line-clamp: 3;
+  line-clamp: 3; /* standard */
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 6.4em; /* 3 lines × 1.5em each */
+}
+.truncate-title {
+  display: -webkit-box;
+  display: box; /* fallback for some older browsers */
+  -webkit-line-clamp: 2;
+  line-clamp: 2; /* standard syntax */
+  -webkit-box-orient: vertical;
+  box-orient: vertical; /* optional fallback */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 2.5em; /* depends on font-size and line-height */
+}
+
+.source{
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 0) and (max-width: 576px){
+  .nav img{
+    width: 150px;
+    height: 100px;
+  }
+  .nav{
+    margin-bottom: 0vh;
+  }
+  .navbar{
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    width: 100%;
+    background-color: #222d39;
+  }
+  .searchbar{
+    padding: 0;
+  }
+}
